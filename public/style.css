@@ -1,0 +1,240 @@
+body
+{
+    height: 100%;
+    margin: 0;
+}
+
+.Main{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 15% 30% 30% 25%;
+    grid-template-rows: 5% 5% 85% 5%;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "sidebar showWin showWin showWin"
+    "footer footer footer footer";
+}
+
+.Header{
+    background-color: rgb(51, 51, 51);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+
+.SideBar{
+    background-color: rgb(83, 83, 83);
+    grid-area: sidebar;
+    border-right: 1.5pt solid rgb(58, 58, 58);
+}
+
+.showWin{
+    background-color: rgb(192, 192, 192);
+    grid-area: showWin;
+}
+
+.navbar{
+    background-color:rgb(29, 29, 29);
+    grid-area: nav;
+    display: flex;
+    gap: 5pt;
+
+    
+}
+
+.navbar button{
+    background:none;
+    color: rgb(238, 238, 238);
+    border: none;
+    cursor: pointer;
+    font-size: 1.5vh;
+    
+}
+
+.navbar button:hover{
+    background-color: rgb(46, 46, 46);
+    
+}
+
+.Footer{
+    background-color: rgb(31, 31, 31);
+    grid-area: footer;
+    border-top: 2pt solid rgba(0, 0, 0, 0.473);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title{
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+    text-shadow: 1.5pt 1.5pt black;
+}
+
+#links{
+    border-bottom: 2pt solid rgba(0, 0, 0, 0);
+    text-align: center;
+    width: min-content;
+    transition: border 150ms ease-in-out;
+    padding: 5pt 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+#links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    border-bottom: 2pt solid rgb(255, 255, 255);
+    background-color: rgb(54, 54, 54);
+}
+
+.CategoryLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5pt;
+    color: white;
+    padding-top: 20pt;
+    font-size: 2vh;
+}
+
+.ImageContent{
+    padding: 20pt;
+    display: flex;
+    gap: 20pt;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageContent img{
+    border-radius: 15px;
+    box-shadow: 2pt 2pt 4pt 4pt rgba(0, 0, 0, 0.658);
+    width: 150pt;
+}
+
+.Hide{
+    display: none !important;
+}
+
+.Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5pt;
+    color: white;
+    padding-top: 20pt;
+    font-size: 18pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Login input{
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    border: 1pt solid black;
+}
+
+.Login button{
+    font-size: 18pt;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10pt;
+    background-color: rgb(127, 255, 217);
+    padding: 2pt 6pt;
+    color: rgb(32, 32, 32);
+    box-shadow: 1pt 2pt 2pt 2pt rgba(0, 0, 0, 0.288);
+}
+
+.Login button:hover{
+    box-shadow: 0pt 1pt 2pt 2pt rgba(0, 0, 0, 0.623);
+    background-color: rgb(127, 255, 165);
+}
+
+
+.Register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5pt;
+    color: white;
+    padding-top: 20pt;
+    font-size: 18pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Register input{
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    border: 1pt solid black;
+}
+
+.Register button{
+    font-size: 18pt;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10pt;
+    background-color: rgb(127, 255, 217);
+    padding: 2pt 6pt;
+    color: rgb(32, 32, 32);
+    box-shadow: 1pt 2pt 2pt 2pt rgba(0, 0, 0, 0.288);
+}
+
+.Register button:hover{
+    box-shadow: 0pt 1pt 2pt 2pt rgba(0, 0, 0, 0.623);
+    background-color: rgb(127, 255, 165);
+}
+
+.registerBut{
+    background: none !important;
+    text-decoration: underline;
+    font-size: 18px !important;
+    border: none !important;
+    color: rgb(128, 172, 255) !important;
+    box-shadow: none !important;
+}
+
+.biographySite{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10pt;
+    flex-wrap: wrap;
+    padding: 20pt;
+}
+
+.biographySite img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 1.5pt solid rgba(0, 0, 0, 0.226);
+    box-shadow: 1pt 1pt 5pt 1pt rgba(0, 0, 0, 0.226);
+}
+
+.tables{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    margin-top: 20pt;
+    box-shadow: 2pt 2pt 3pt 3pt rgba(0, 0, 0, 0.658);
+}
+
+.tables tr th{
+    background-color: rgb(80, 155, 142);
+    padding: 10pt 20pt;
+    font-size: 20pt;
+}
+
+.tables tr td{
+    background-color: rgb(80, 155, 142);
+    padding: 5pt 10pt;
+}
